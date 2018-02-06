@@ -24,7 +24,7 @@ if (myFavoriteColor === 'yes' || myFavoriteColor === 'y'){
 }
 console.log('The user thinks ' + myFavoriteColor + ', that I have a favorite color');
 
-var mySiblings = prompt('Do you think I have siblings? please answer with NO or Yes').toLowerCase().trim();
+var mySiblings = prompt('Do you think I have siblings? please answer with No or Yes').toLowerCase().trim();
 if (mySiblings === 'n'|| mySiblings === 'no'){
   alert('sometimes I wish I was an only child, but I have a twin sister and an older brother.');
 } else if(mySiblings === 'yes' || mySiblings === 'y'){
