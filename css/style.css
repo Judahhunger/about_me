@@ -1,0 +1,42 @@
+/* font-family: 'Berkshire Swash', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Rock Salt', cursive; */
+
+
+body{
+  background-image: linear-gradient(rgba(162, 185, 103, 0.788), rgba(184, 12, 12, 0.5)), url(../img/nasa.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
+}
+/* starting css top of index page */
+header{
+  font-family: 'Berkshire Swash', cursive;
+  color: blanchedalmond;
+  font-size: 50px;
+  text-align: center;
+  margin: 15px;
+}
+section h2{
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  color: antiquewhite;
+  font-size: 30px;
+  margin: 20px;
+}
+/* starting to style list items on right side of index page */
+aside{
+  font-family: 'Times New Roman', Times, serif;
+  color: beige;
+  display: inline-block;
+  margin: 20px;
+}
+aside h2{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 25px;
+  margin-left: 20px;
+}
+aside li{
+  margin: 15px;
+  margin-left: 25px;
+}
