@@ -4,6 +4,7 @@ font-family: 'Rock Salt', cursive; */
 
 
 body {
+  font-family: 'Times New Roman', Times, serif;
   background-image: linear-gradient(rgba(162, 185, 103, 0.788), rgba(184, 12, 12, 0.5)), url(../img/nasa.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
