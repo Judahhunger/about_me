@@ -95,18 +95,19 @@ function clubQ() {
 }
 
 function countriesQ() {
-  var countriesSeen =['australia', 'egypt', 'kuwait', 'iraq', 'thailand', 'cambodia', 'singapore', 'philippines', 'japan', 'korea', 'china', 'uae'];
+  var countriesSeen =['australia', 'egypt', 'kuwait', 'iraq', 'thailand', 'cambodia', 'singapore', 'philippines', 'japan', 'korea', 'china'];
   var countryCount = 0;
   var countryFlag = false;
-
+  for (i in countriesSeen){
+    countriesSeen[i] = capitalizeFirstLetter(countriesSeen[i]);
+  }
   while (countryFlag === false && countryCount < 6){
-    var countriesGuessed = prompt('Can you guess a memerable country i\'ve been too in six tries? (excluding Mexico and Canada)').toLowerCase();
+    var countriesGuessed = capitalizeFirstLetter(prompt('Can you guess a memerable country i\'ve been too in six tries? (excluding Mexico and Canada)').toLowerCase());
     console.log ('The user guessed ' + countriesGuessed + ' for question 7');
     for (var i = 0; i < countriesSeen.length; i++){
+
       if (countriesGuessed === countriesSeen[i]){
-        countriesSeen[i] = capitalizeFirstLetter(countriesSeen[i]);
-        console.log(countriesSeen);
-        alert('Yep i have been to alot, here is a few countries i\'ve seen ' + countriesSeen);
+        alert('Yep i have been to alot, here is a few countries i\'ve seen ' + countriesSeen.join(', '));
         countryFlag = true;
         totalScore++;
         console.log('User got a correct answer wtih ' + countriesGuessed);
