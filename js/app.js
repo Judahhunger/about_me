@@ -96,11 +96,9 @@ function clubQ() {
 
 function countriesQ() {
   var countriesSeen =['australia', 'egypt', 'kuwait', 'iraq', 'thailand', 'cambodia', 'singapore', 'philippines', 'japan', 'korea', 'china'];
+  for (i in countriesSeen) countriesSeen[i] = capitalizeFirstLetter(countriesSeen[i]);// made first letter of each index capped.//
   var countryCount = 0;
   var countryFlag = false;
-  for (i in countriesSeen){
-    countriesSeen[i] = capitalizeFirstLetter(countriesSeen[i]);
-  }
   while (countryFlag === false && countryCount < 6){
     var countriesGuessed = capitalizeFirstLetter(prompt('Can you guess a memerable country i\'ve been too in six tries? (excluding Mexico and Canada)').toLowerCase());
     console.log ('The user guessed ' + countriesGuessed + ' for question 7');
@@ -118,12 +116,13 @@ function countriesQ() {
   }
 }
 
-// militaryQ();
-// colorQ();
-// siblingsQ();
-// creativeQ();
-// fromQ();
-// clubQ();
+militaryQ();
+colorQ();
+siblingsQ();
+creativeQ();
+fromQ();
+clubQ();
 countriesQ();
 
 alert('Thanks for Playing ' + userName + ' your total score is ' + totalScore);
+console.log('the user ' + userName + ' got ' + totalScore + ' out of 7 questions right');
