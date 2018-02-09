@@ -80,16 +80,17 @@ function clubQ() {
   var clubPromptCount = 0;
   while (clubPromptCount < 4 ) {
     var clubsManaged = parseInt(prompt('can you guess how many clubs i have managed in four tries? please enter a number'));
-    console.log(clubPromptCount);
     if (clubsManaged === 5){
       alert('You\'re guess was correct, 5 clubs from Colorado to Seattle.');
       totalScore++;
+      console.log('the user guessed correct with ' + clubsManaged);
       break;
     } else if (clubsManaged < 5){
       alert('Nope gotta guess higher');
     } else{
       alert('Nope gotta guess lower');
     } clubPromptCount++;
+    console.log('The user guessed ' + clubsManaged);
   }
 }
 
@@ -100,13 +101,15 @@ function countriesQ() {
 
   while (countryFlag === false && countryCount < 6){
     var countriesGuessed = prompt('Can you guess a memerable country i\'ve been too in six tries? (excluding Mexico and Canada)').toLowerCase();
-    console.log(countriesGuessed);
+    console.log ('The user guessed ' + countriesGuessed + ' for question 7');
     for (var i = 0; i < countriesSeen.length; i++){
-      console.log(countriesSeen[i]);
       if (countriesGuessed === countriesSeen[i]){
-        alert('Yep i have been to alot, here is a few countries i\'ve seen ' + countriesSeen.join(', '));
+        countriesSeen[i] = capitalizeFirstLetter(countriesSeen[i]);
+        console.log(countriesSeen);
+        alert('Yep i have been to alot, here is a few countries i\'ve seen ' + countriesSeen);
         countryFlag = true;
         totalScore++;
+        console.log('User got a correct answer wtih ' + countriesGuessed);
       }
     } if (countryCount === 5){
       alert('Well you tried i\'ve been to ' + countriesSeen.join(', '));
@@ -114,12 +117,12 @@ function countriesQ() {
   }
 }
 
-militaryQ();
-colorQ();
-siblingsQ();
-creativeQ();
-fromQ();
-clubQ();
+// militaryQ();
+// colorQ();
+// siblingsQ();
+// creativeQ();
+// fromQ();
+// clubQ();
 countriesQ();
 
 alert('Thanks for Playing ' + userName + ' your total score is ' + totalScore);
