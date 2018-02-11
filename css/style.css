@@ -22,7 +22,7 @@ header {
 section h2 {
   font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
   color: antiquewhite;
-  font-size: 30px;
+  font-size: 40px;
   margin: 20px;
 }
 /* starting to style list items on right side of index page */
@@ -34,10 +34,57 @@ aside {
 }
 aside h2 {
   font-family: 'Permanent Marker', cursive;
-  font-size: 25px;
+  font-size: 27px;
   margin-left: 20px;
 }
 aside li {
   margin: 15px;
   margin-left: 25px;
+  font-size: 18px;
+}
+
+article#top10 {
+  margin: 0;
+  margin-left: 35px;
+  padding: 16px;
+  padding-top: 250px;
+  color: rgb(9, 201, 143);
+  width: 20%;
+  font-weight: bold;
+}
+article#top10 h2{
+  font-size: 25px;
+}
+article#top10 li {
+  margin: 0;
+  padding: 3px;
+}
+
+main {
+  float: right;
+  width: 65%;
+  margin-top: 40px;
+  color: bisque;
+  font-size: 20px;
+  line-height: 25px;
+}
+main h2{
+  text-align: auto;
+  padding: 25px;
+  padding-left: 100px;
+  font-size: 35px;
+
+}
+section#afterHighSchool img {
+  height: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+main p{
+  width: 85%;
+}
+section#clubLife img{
+  height: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
